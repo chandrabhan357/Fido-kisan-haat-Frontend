@@ -1,0 +1,228 @@
+input[type="text"]::placeholder{
+
+  text-indent: 10px;
+}
+
+input[type="tel"]::placeholder{
+
+  text-indent: 10px;
+}
+input[type="email"]::placeholder{
+
+  text-indent: 10px;
+}
+
+input[type="password"]::placeholder{
+
+  text-indent: 10px;
+}
+
+input[type="address"]::placeholder{
+
+  text-indent: 10px;
+}
+
+input[type="number"]::placeholder{
+
+  text-indent: 10px;
+}
+.User_container{
+    height: 166vh;
+    display: flex;
+    padding: 10px;
+    max-width: 700px;
+    width: 100%;
+    background-color:#fff;
+    position: relative;
+    left:15%;
+    top:0px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }  
+  
+  .User_container span{
+    position: absolute;
+    top:30px;
+    left:40px;
+    font-size:17px;
+    font-weight: 700;
+    
+    
+  }
+  
+  
+  .input_name{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    padding-top: 20px;
+    margin-left: 80px;
+  }
+  
+ 
+  .input_phone{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+  
+  .input_alt_phone{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+  
+  .input_email{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+
+  .input_password{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+  
+  .input_add{
+    margin-bottom: 45px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+    
+  }
+
+   
+   .input_bdy{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 50px;
+    position: relative;
+    top:475px;
+    right:516px;
+  }
+
+  .shift{
+    margin-top: 82px;
+  }
+
+  
+  .country_name{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    position: relative;
+    top:590px;
+    right:464px;
+    
+  }
+
+  
+  .input_pan{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    position:relative;
+    top:299px;
+    right:40px;
+   
+  }
+  
+  .input_aadhar{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    position: relative;
+    top: 218px;
+    right: 464px;
+   
+  }
+  
+ 
+
+  .state_name{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    position: relative;
+    top:524px;
+    right: 40px;
+  }
+   
+  .city{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    position: relative;
+    right:464px;
+    top:534px;
+  }
+
+  .Block{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    position: relative;
+    top:248px;
+    right:40px;
+  }
+
+  .pin{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    position: relative;
+    top:250px;
+    right:464px;
+  }
+  
+  .User_container .form{
+    position: relative;
+    top:50px;
+    
+    right:80px;
+    padding-left: 30px;
+    padding-right: 50px;
+    
+  }
+  
+  .User_container input{
+    width:620px;
+  }
+
+  .gender_box{
+    position: relative;
+    right:53px;
+    bottom:142px;
+  }
+  .gender{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    float:left;
+    padding:5px;
+    padding-top: 0px;
+    
+  }
+
+  .gender_box h3{
+    color:#333;
+
+  }
+  
+  input{
+    height:40px;
+  }
+  
+  .form_button{
+    position: relative;
+    top:220px;
+    right:105px;
+  }
+  
+  .form_button button{
+    background-color: rgb(5, 5, 134);
+    padding:10px 15px;
+    border-radius: 5px;
+    border-color: rgb(5, 5, 134);
+    color:white;
+    margin-bottom: 20px;
+  }
+
+  .navcontainer{
+    width: 395px;
+  }
+  
+  
+  

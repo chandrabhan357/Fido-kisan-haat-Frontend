@@ -1,0 +1,695 @@
+ /*  platinum card*/
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin sans',sans-serif;
+}
+.container{
+    /*min-height: 100vh;*/
+    width: 100%;
+    /*background:rgba(207, 215, 244, 0.825);*/
+   /* display: flex;
+    align-items: center;
+    justify-content: center;*/
+    
+    
+}
+.card1{
+    width: 470px;
+    height: 250px;
+   position: relative;
+   color:#fff;
+   cursor: pointer;
+   /*box-shadow: 1px 20px 30px grey;*/
+   perspective: 1000px;
+   
+}
+.card-inner{
+    width: 100%;
+    height: 100% ;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    margin-left: 15%;
+}
+.back1{
+   width: 100%;
+   height: 100%;
+   background-image:linear-gradient(45deg,#a4a5a8,#452e28  ) ;
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-radius: 15px;
+   padding: 20px 30px;
+   overflow:  hidden;
+   z-index: 1;
+   backface-visibility: hidden;
+}
+.front1{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(45deg,#a4a5a8,#452e28  ) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    padding: 20px 30px;
+    overflow:  hidden;
+    z-index: 1;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+.map-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+
+}
+.row ul h2{
+  margin-left: 30px;
+  color:#fff;
+  padding: 5px;
+}
+ul h2{
+    /*margin-left: 30px;*/
+    color:#fff;
+    padding: 5px 5px 5px 0px;
+}
+ul span{
+    color:#fff;
+    margin-left: 10px;
+}
+ul h5{
+    margin-left: 10px;
+}
+.card-no{
+    font-size: 25px;
+    margin-top:20px ;
+    color: orange;
+}
+.card-holder{
+    font-size: 12px;
+    margin-top: 30px;
+}
+.name{
+    font-size: 20px;
+    margin-top: 10px ;
+}
+.bar1{
+    background: #222;
+    margin-left: -30px;
+    margin-right: -30px;
+    height: 60px;
+    margin-top: 10px;
+    
+
+}
+.card-cvv1{
+    margin-top: 20px;
+}
+.card-cvv1 div{
+    flex: 1;
+}
+.card-cvv1 img{
+    width: 100%;
+    display: block;
+    line-height: 0;
+}
+.card-cvv1 p{
+    background: #fff;
+    color: #000;
+    font-size: 22px;
+    padding:5px 15px ;
+}
+.card-text{
+    margin-top: 50px;
+    font-size:14px ;
+    
+}
+.back1{
+    transform: rotateY(180deg);
+}
+.card1:hover .card-inner{
+    transform: rotateY(-180deg);
+    
+}
+.card-type{
+    float: right;
+    font-family: "Audiowide", sans-serif;
+    margin-top: 10px;
+}
+.bottom-text{
+    font-size: 10px;
+}
+.card-des{
+  position: relative;
+  top: 20px;
+}
+.card-des span{
+  color: blue;
+  position:absolute;
+  top: 10px;
+}
+.facility span{
+  color: rgb(13, 13, 222);
+  
+  
+}
+
+.facility{
+  
+  margin-top: 20px;
+}
+.card-fa span{
+  color: blue;
+  margin-top: 10px;
+  position: absolute;
+} 
+.card-fa img{
+  background: transparent;
+  mix-blend-mode: multiply;
+}
+
+
+
+/* button */
+.button {
+  border-radius: 12px;
+ /* background-color: rgb(0, 123, 225);*/
+ background-image:linear-gradient(45deg,#a4a5a8,#452e28  ) ;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  /*width: 200px;*/
+  transition: all 0.5s;
+  cursor: pointer;
+  padding:30px ;
+  
+  margin-top: 7%;
+  height: 30px;
+}
+.button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  bottom: 10px;
+}
+/*.button span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span{
+  padding-right: 25px;
+}
+
+.button:hover span:after{
+  opacity: 1;
+  right: 0;
+}*/
+.main{
+  display: flex;
+}
+   
+
+/* Diamond Card*/
+/*body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family:"poppins",sans-serif;
+  }*/
+  
+  .front {
+  width:470px;
+  height:250px;
+  padding:20px;
+  box-sizing:border-box;
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.8)),url(../img/card.jpg);
+  list-style-type: none;
+  border-style: solid;
+  border-width:5px;
+  border-color: rgb(2, 150, 2);
+  backface-visibility: hidden;
+  position: fixed;
+  border-radius: 12px;
+  }
+  
+  .back{
+      transform: rotateY(180deg);
+      width:470px;
+      height:250px;
+      box-sizing: border-box;
+      border-width: 5px;
+      border-color: rgb(2, 150, 2);
+      border-style: solid;
+      background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.8)),url(../img/card.jpg);;
+      backface-visibility: hidden;
+      border-radius: 12px;
+  }   
+  
+  .card{
+      background-color: transparent;
+      width:470px;
+      height:250px;
+      perspective: 1000px;
+      margin-top: 5%;
+      margin-left: 73px;
+      
+  }
+  
+  
+  .flip_card{
+      width:100%;
+      height:100%;
+      position:relative;
+      transition:transform 0.6s;
+      transform-style:preserve-3d;
+  }
+  
+  .card:hover .flip_card{
+      transform:rotateY(-180deg);
+  }
+  
+  .name-on-card{
+      padding-left:190px;
+      padding-top:0px;
+      color:rgb(23, 23, 197);
+      font-size:14px;
+      font-size: "poppins",sans-serif;
+  }
+  
+  .pan{
+    padding-left: 115px;
+    padding-top:10px;
+    color:black;
+    font-size: 17px;
+    word-spacing: 0.5em;
+  }
+  
+  .mon{
+      font-size:10px;
+      padding-top:10px;
+      padding-left: 170px;
+      word-spacing: 0.2em;
+      color:black;
+  }
+  
+  span.val{
+      font-size:8px;
+      color:black;
+      padding-left:130px;
+      
+  
+  }
+  
+  
+  span.unit{
+      font-size: 25px;
+      color:black;
+      
+  }
+  
+  .th{
+      position:absolute;
+      bottom: 5px;
+  }
+  .img{
+      margin-left: 340px;
+          
+  }
+  
+  
+  .unit{
+      font-size: 25px;
+      padding-left:0px;
+  }
+  
+  .go{
+      font-size: 13px;
+      padding-left:370px;
+      padding-bottom:10px;
+      color:rgb(95, 93, 93);
+      
+      
+  }
+  
+  .firl{
+      font-size: 17px;
+      color:red;
+      padding-left:60px;
+      padding-bottom: 10px;
+      font-weight:bolder;
+  }
+  
+  .fido{
+      font-size:15px;
+      color:orange;
+      word-spacing: 0.1em;
+      padding-left: 20px;
+      font-weight: bolder;
+  }
+  
+  .far{
+      color:green;
+      font-size:13px ;
+      padding-left: 11px;
+      font-weight: bolder;
+  }
+  
+  
+  .bar{
+      background: #222;
+      margin-left:0px;
+      margin-right:0px;
+      height:40px;
+      margin-top:30px;
+      width:461px;
+  }
+  
+  .img1{
+      background-color:transparent;
+  
+  }
+  
+  .img2{
+      padding-left:160px;
+      position: relative;
+      bottom: 40px;
+      background: transparent;
+      mix-blend-mode: multiply;
+      
+  }
+  .img3{
+      padding-left:330px;
+      position:relative;
+      bottom:165px;
+  }
+  
+  .img4{
+      position: relative;
+      bottom:135px;
+  }
+  
+  .img5{
+      position:relative;
+      padding-left: 280px;
+      bottom:225px
+  }
+  
+  .content{
+      font-size:6px;
+      position:relative;
+      bottom:230px;
+      padding-left:255px;
+  }
+  
+  .content span{
+      padding-left:30px;
+      position: relative;
+      top:10px;
+  }
+  
+  .content p{
+      padding-left:30px;
+      position: relative;
+      top:5px;
+  }
+  
+
+  /*diamond button*/
+  .button-diamond{
+    border-radius: 12px;
+    background-color: rgb(247, 247, 141, 0.6);
+    border: none;
+    color:#000;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    /*width: 200px;*/
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 30px;
+    margin-top: 35%;
+    height: 30px;
+    margin-left: -14%;
+  }
+  .button-diamond span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    bottom: 10px;
+  }
+  .button-diamond span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  /*.button-diamond span{
+    padding-right: 25px;
+  }
+  
+  .button-diamond span:after{
+    opacity: 1;
+    right: 0;
+  }*/
+  .button-diamond{
+    float: left;
+  }
+  
+/* gold card*/
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin sans',sans-serif;
+}
+.container{
+ /* min-height: 100vh;
+  width: 100%;
+  background:#fff;
+  display: flex;*/
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.card2{
+  width: 470px;
+  height: 250px;
+ position: relative;
+ color:#fff;
+ cursor: pointer;
+ /*box-shadow: 1px 20px 30px grey;*/
+ perspective: 1000px;
+ 
+}
+.card-inner{
+  width: 100%;
+  height: 100% ;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.back2{
+ width: 100%;
+ height: 100%;
+ background-image:linear-gradient(45deg,gold,#452e28  ) ;
+ position: absolute;
+ top: 0;
+ left: 0;
+ border-radius: 15px;
+ padding: 20px 30px;
+ overflow:  hidden;
+ z-index: 1;
+ backface-visibility: hidden;
+ margin-top: 11%;
+}
+.front2{
+  width: 100%;
+  height: 100%;
+  background-image:linear-gradient(45deg,gold,#452e28  ) ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  padding: 20px 30px;
+  overflow:  hidden;
+  z-index: 1;
+  margin-top: 11%;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+}
+.map-img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: -1;
+
+}
+ul h2{
+  margin-left: 30px;
+  color:red;
+  padding: 5px;
+}
+ul span{
+  color:orange;
+  margin-left: 10px;
+}
+ul h5{
+  margin-left: 10px;
+}
+.card-no2{
+  font-size: 25px;
+  margin-top:20px ;
+  color: #fff;
+}
+.card-holder{
+  font-size: 12px;
+  margin-top: 30px;
+}
+.name{
+  font-size: 20px;
+  margin-top: 10px ;
+}
+.bar1{
+  background: #222;
+  margin-left: -30px;
+  margin-right: -30px;
+  height: 60px;
+  margin-top: 10px;
+  
+
+}
+.card-cvv2{
+  margin-top: 20px;
+}
+.card-cvv2 div{
+  flex: 1;
+}
+.card-cvv2 img{
+  width: 100%;
+  display: block;
+  line-height: 0;
+}
+.card-cvv2 p{
+  background: #fff;
+  color: #000;
+  font-size: 22px;
+  padding:5px 15px ;
+}
+.card-text{
+  margin-top: 50px;
+  font-size:14px ;
+  
+}
+.back2{
+  transform: rotateY(180deg);
+}
+.card2:hover .card-inner{
+  transform: rotateY(-180deg);
+  
+}
+.card-type{
+  float: right;
+  font-family: "Audiowide", sans-serif;
+  margin-top: 10px;
+}
+.bottom-text{
+  font-size: 10px;
+}
+
+ /* Gold button*/
+ .button-gold {
+  border-radius: 12px;
+  /*background-color: rgb(0, 123, 225);*/
+  background-image:linear-gradient(45deg,gold,#452e28  ) ;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding:30px ;
+  margin-left: -138px;
+  margin-top: 65%;
+  height: 30px;
+}
+.button-gold span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  bottom: 10px;
+}
+/*.button-gold span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button-gold:hover span{
+  padding-right: 25px;
+}
+
+.button-gold:hover span:after{
+  opacity: 1;
+  right: 0;
+}*/
+
+.shift{
+  padding-left: 2px;
+
+}
+
+.none{
+  margin-top: 42px;
+}
+  .none1{
+   margin-top:1px ;
+   margin-left:1px ;
+  }
+  
+  .none2{
+    margin-top:1px ;
+    margin-left:1px ;
+   }
+
+   .align{
+    margin-top: 299px;
+    margin-left: -119px;
+   }
+   
+   .align1{
+    margin-top: 648px;
+    margin-left: -28px;
+   }
+

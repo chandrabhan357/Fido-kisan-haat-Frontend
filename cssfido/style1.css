@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    line-height: var(--bs-body-line-height);
+    text-align: var(--bs-body-text-align);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+div{
+    display: block;
+}
+
+div.logo{
+    margin: auto;
+    display: block;
+    width:17%;
+    align-items: center;
+}
+
+.container{
+position: absolute;
+width: 478px;
+height: 505px;
+left: 50%;
+top: 50%;
+max-height: 100%;
+max-width: 100%;
+transform: translate(-50%,-50%);
+}
+
+.round1{
+    border-radius: 4px;
+    display: block;
+    box-shadow: none;
+}
+
+.container1{
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-family: Source Sans Pro;
+    height: 100%;
+    left: 0;
+    padding: 48px;
+    position: relative;
+    text-align: left;
+    top: 0;
+    width: 100%;
+}
+
+.container h1{
+    color: #282a35;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 0;
+}
+
+form{
+    margin-top: 0em;
+    display: block;
+}
+
+.Emailinput .emailinput2{
+    position: relative;
+
+}
+
+.Emailinput{
+    display: flex;
+    flex-direction: column;
+    font-family: Source Sans Pro;
+
+}
+
+.Emailinput div.Emailinput1{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.Emailinput div.Emailinput1 label {
+    display: inline-block;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 0;
+}
+
+label{
+    cursor: default;
+}
+
+.Emailinput div.Emailinput1 span{
+    font-size: 14px;
+}
+
+.Emailinput div.Emailinput1 span span{
+    color: rgb(0, 123, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+input[type=text] {
+    font-family: Source Sans Pro;
+    font-size: 14px;
+}
+
+.enteremail {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+input{
+    line-height: inherit;
+}
+
+.passwordinput{
+    position: relative;
+}
+
+.passwordinput{
+    display: flex;
+    flex-direction: column;
+    font-family: Source Sans Pro;
+}
+
+.passwordinput div.passwordinputlabel{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.passwordinput div.passwordinputlabel label{
+
+    display: inline-block;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 0;
+
+}
+
+.passwordinput div.passwordinputlabel span{
+    font-size: 14px;
+}
+
+.passwordinputshow{
+    color: #282a35;
+    cursor: pointer;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.passwordinput div.passwordinputlabel span svg{
+    display: inline-block;
+    margin-right: 4px;
+    position: relative;
+    top: 2px;
+}
+
+.passwordinputshow{
+    right: 0;
+}
+
+.passwordinput svg{
+    bottom: 22px;
+    position: absolute;
+    right: 12px;
+    vertical-align: initial;
+
+}
+
+/* button.hide{
+    visibility: hidden;
+} */
+
+svg{
+    vertical-align: middle;
+}
+
+.-fif_input_wrp #current-password, .-fif_input_wrp #new-password, .-fif_input_wrp>input[type=password], .-fif_input_wrp>input[type=text], .enteremail {
+    width: 100%;
+}
+
+.PasswordInput_input_field__EWMIU {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 6px 0;
+    padding: 14px;
+}
+
+.LoginModal_login_margin__xquar {
+    height: 39px;
+}
+
+@media (max-width: 800px){
+.container1 {
+    border: none;
+    padding: 48px 29px;
+}
+
+}
+
+@media (max-width: 800px) {
+
+.LoginModal_cta_bottom_box__wU1AF {
+    width: 100%;
+}
+}
+
+.LoginModal_cta_bottom_box__wU1AF {
+    box-sizing: border-box;
+    position: relative;
+    top: 6px;
+    width: 100%;
+}
+
+.LoginModal_cta_bottom_box_button_login__5Fbwv {
+    margin-top: 4px;
+}
+
+.Button_button__URNp\+.Button_primary__d2Jt3 {
+    background-color: rgb(0, 123, 255);
+    color: #fff;
+}
+
+.Button_button__URNp\+.Button_fullwidth__0HLEu {
+    width: 100%;
+}
+
+.Button_button__URNp\+ {
+    border: 0;
+    border-radius: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    height: 50px;
+    letter-spacing: normal;
+    line-height: 1.17;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.LoginModal_forgot_pwd_wrapper__qttSX {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.LoginModal_forgot_pwd_wrapper__qttSX a, .LoginModal_forgot_pwd_wrapper__qttSX button {
+    color: #282a35;
+    font-family: Source Sans Pro;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}

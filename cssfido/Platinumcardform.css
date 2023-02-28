@@ -1,0 +1,414 @@
+
+
+
+  /*cardform*/
+
+
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin sans',sans-serif;
+}
+.container{
+   /* min-height: 100vh;
+   width: 100%; */
+   /* background:#fff;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.card{
+    width: 470px;
+    height: 250px;
+   position: relative;
+   color:#fff;
+   cursor: pointer;
+   /*box-shadow: 1px 20px 30px grey;*/
+   perspective: 1000px;
+   
+}
+.card-inner{
+    width: 100%;
+    height: 100% ;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.back{
+   width: 100%;
+   height: 100%;
+   background-image:linear-gradient(45deg,#a4a5a8,#452e28  ) ;
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-radius: 15px;
+   padding: 20px 30px;
+   overflow:  hidden;
+   z-index: 1;
+   backface-visibility: hidden;
+   /*margin-top: 116px;*/
+}
+.front{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(45deg,#a4a5a8,#452e28  ) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    padding: 20px 30px;
+    overflow:  hidden;
+    z-index: 1;
+   /*margin-top: 116px;*/
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+.map-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+
+}
+ul h2{
+    margin-left: 30px;
+    color:#fff;
+    padding: 5px;
+}
+ul span{
+    color:orange;
+    margin-left: 10px;
+}
+ul h5{
+    margin-left: 10px;
+    
+}
+.card-no{
+    font-size: 25px;
+    margin-top:10px ;
+    color: orange;
+}
+.card-holder{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.name{
+    font-size: 20px;
+    margin-top: 10px ;
+}
+.bar{
+    background: #222;
+    margin-left: -30px;
+    margin-right: -30px;
+    height: 60px;
+   /* margin-top: 10px;*/
+    
+
+}
+.card-cvv{
+    margin-top: 5px;
+}
+.card-cvv div{
+    flex: 1;
+}
+.card-cvv img{
+    width: 100%;
+    display: block;
+    line-height: 0;
+}
+.card-cvv p{
+    background: #fff;
+    color: #000;
+    font-size: 22px;
+    padding:5px 10px ;
+}
+.card-text{
+    margin-top: 50px;
+    font-size:10px ;
+    
+}
+.back{
+    transform: rotateY(180deg);
+}
+.card:hover .card-inner{
+    transform: rotateY(-180deg);
+    
+}
+.card-type{
+    float: right;
+    font-family: "Audiowide", sans-serif;
+    margin-top: 10px;
+}
+.bottom-text{
+    font-size: 9px;
+}
+
+/*form*/
+.card-form{
+  background: #fff;
+  box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%);
+  border-radius: 10px;
+  padding: 35px;
+  padding-top: 180px;
+  width: 58%;
+  margin-left: 21%;
+  /*margin-bottom: 116px;*/
+  margin-top: -13%;
+}
+.card-input{
+  margin-bottom: 20px;
+}
+.card-input_label{
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #1a3b5d;
+  display: block;
+  user-select: none;
+  width: 100%;
+  padding-top: 20px;
+}
+.card-input_input{
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #ced6e0;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  padding: 5px 15px;
+  background: none;
+  color: #1a3b5d;
+  font-family: "source sans pro",sans-serif;
+}
+.card-form_row{
+  display: flex;
+  align-items: flex-start;
+}
+.card-form_col{
+  flex: auto;
+  margin-right: 35px;
+}
+.card-form_group{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.card-input_input.-select{
+  /*-webkit-appearance: none;*/
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA…YAg5hYKAIFYgHBo6w9RRgAFfy160QuV8NAAAAAElFTkSuQmCC);
+  background-size: 12px;
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  padding-right: 30px;
+}
+.card-form_group .card-input_input{
+  flex: 1;
+  margin-right: 15px;
+}
+option{
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2rem;
+  padding: 0px 2px 1px;
+}
+.card-form_col.-cvv{
+  max-width: 150px;
+}
+.card-form_col:last-child{
+  margin-right: 0;
+}
+.card-form_button {
+  width: 100%;
+  height: 55px;
+  background: #2364d2;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Source Sans Pro", sans-serif;
+  box-shadow: 3px 10px 20px 0px rgb(35 100 210 / 30%);
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/*RESOPONSIVE CODE*/
+/*.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  height: 400px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  background-color: #f5f5f5;
+}
+
+.card .back {
+  background-color: #4caf50;
+  transform: rotateY(180deg);
+}
+
+.map-img {
+  width: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-no p {
+  margin-right: 10px;
+}
+
+.card-holder {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.name p {
+  margin-right: 10px;
+}
+
+.card-type {
+  margin-top: 10px;
+}
+
+.back .bar {
+  height: 50px;
+  width: 100%;
+  background-color: #f5f5f5;
+  margin: 10px 0;
+}
+
+.bottom-text {
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+.card-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.card-form_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-form_col {
+  width: 48%;
+}
+
+.-cvv {
+  text-align: right;
+}
+
+.card-form_group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.card-input_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8rem;
+  color: #888;
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+  transform-origin: 0 0;
+}
+
+.card-input_input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px 10px 10px 0;
+  border: none;
+  border-bottom: 1px solid #888;
+  background-color: transparent;
+}
+
+.card-input_input:focus {
+  outline: none;
+  border-bottom: 2px solid #555;
+}*/

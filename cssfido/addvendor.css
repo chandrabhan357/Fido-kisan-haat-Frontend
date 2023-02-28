@@ -1,0 +1,181 @@
+
+input[type="text"]::placeholder{
+
+  text-indent: 10px;
+}
+
+input[type="tel"]::placeholder{
+
+  text-indent: 10px;
+}
+input[type="email"]::placeholder{
+
+  text-indent: 10px;
+}
+
+input[type="password"]::placeholder{
+
+  text-indent: 10px;
+}
+
+input[type="address"]::placeholder{
+
+  text-indent: 10px;
+}
+
+input[type="number"]::placeholder{
+
+  text-indent: 10px;
+
+}
+
+.Vendor_container{
+    height: 160vh;
+    display: flex;
+    padding: 10px;
+    max-width: 700px;
+    width: 100%;
+    background-color:#fff;
+    position: relative;
+    left:15%;
+    top:0px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }  
+  
+  .Vendor_container span{
+    position: absolute;
+    top:30px;
+    left:40px;
+    font-size:17px;
+    font-weight: 700;
+    
+    
+  }
+  
+  
+  .input_name{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    padding-top: 20px;
+    margin-left: 80px;
+  }
+  
+  .input_code{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+  
+  .input_phone{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+  
+  .input_alt_phone{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+  
+  .input_email{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+  
+  .input_password{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+
+  .input_add{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+  
+  .input_pan{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    margin-left: 80px;
+  }
+  
+  .input_aadhar{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    position: relative;
+    left:302px;
+    bottom:83px;
+    margin-left: 80px;
+  }
+  
+  .input_doc{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    position: relative;
+    bottom: 100px;
+    margin-left: 80px;
+  }
+  
+  .Vendor_container .form{
+    position: relative;
+    top:50px;
+    
+    right:80px;
+    padding-left: 30px;
+    padding-right: 50px;
+    
+  }
+  
+  .Vendor_container input{
+    width:620px;
+  }
+  
+  input{
+    height:40px;
+  }
+  
+  .form_button{
+    position: relative;
+    bottom: 120px;
+    left:620px;
+  }
+  
+  .form_button button{
+    background-color: rgb(5, 5, 134);
+    padding:10px 15px;
+    border-radius: 5px;
+    border-color: rgb(5, 5, 134);
+    color:white;
+    margin-bottom: 20px;
+  }
+  
+  .pointer{
+    cursor: pointer;
+  }
+  
+  .fewcontain, .fewcontain2{
+    margin-left: 80px;
+    display: flex;
+    
+    
+  }
+
+  .file{
+    margin-top: 30px;
+  }
+
+  .input_state, .pin{
+    padding-left: 200px;
+  }
+
+  .fewcontain{
+    margin-top: 26px;
+  }
+
+  .fewcontain2{
+    margin-top: 30px;
+  }

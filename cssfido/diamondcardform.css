@@ -1,0 +1,305 @@
+/* Diamond Card*/
+/*body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family:"poppins",sans-serif;
+  }*/
+  
+  .front {
+    width:470px;
+    height:250px;
+    padding:20px;
+    box-sizing:border-box;
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.8)),url(../img/card.jpg);
+    list-style-type: none;
+    border-style: solid;
+    border-width:5px;
+    border-color: rgb(2, 150, 2);
+    backface-visibility: hidden;
+    position: fixed;
+    border-radius: 12px;
+   /* margin-left: 180px;*/
+    }
+    
+    .back{
+        transform: rotateY(180deg);
+        width:470px;
+        height:250px;
+        box-sizing: border-box;
+        border-width: 5px;
+        border-color: rgb(2, 150, 2);
+        border-style: solid;
+        background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.8)),url(../img/card.jpg);;
+        backface-visibility: hidden;
+        border-radius: 12px;
+       /* margin-left: 180px;*/
+    }   
+    
+    .card{
+        background-color: transparent;
+        width:470px;
+        height:250px;
+        perspective: 1000px;
+       /* margin-top: 5%;*/
+       /* margin-left: 73px;*/
+       margin-left: 337px;
+       margin-top: 20px;
+       margin-left: 25%;
+        
+    }
+    
+    
+    .flip_card{
+        width:100%;
+        height:100%;
+        position:relative;
+        transition:transform 0.6s;
+        transform-style:preserve-3d;
+    }
+    
+    .card:hover .flip_card{
+        transform:rotateY(-180deg);
+    }
+    
+    .name-on-card{
+        padding-left:190px;
+        padding-top:0px;
+        color:rgb(23, 23, 197);
+        font-size:14px;
+        font-size: "poppins",sans-serif;
+        margin-top: -28px;
+    }
+    
+    .pan{
+      padding-left: 115px;
+      padding-top:10px;
+      color:black;
+      font-size: 17px;
+      word-spacing: 0.5em;
+    }
+    
+    .mon{
+        font-size:10px;
+        padding-top:10px;
+        padding-left: 170px;
+        word-spacing: 0.2em;
+        color:black;
+    }
+    
+    span.val{
+        font-size:8px;
+        color:black;
+        padding-left:130px;
+        
+    
+    }
+    
+    
+    span.unit{
+        font-size: 25px;
+        color:black;
+        
+    }
+    
+    .th{
+        position:absolute;
+        bottom: 5px;
+    }
+    .img{
+        margin-left: 340px;
+            
+    }
+    
+    
+    .unit{
+        font-size: 25px;
+        padding-left:0px;
+    }
+    
+    .go{
+        font-size: 13px;
+        padding-left:370px;
+        padding-bottom:10px;
+        color:rgb(95, 93, 93);
+        
+        
+    }
+    
+    .firl{
+        font-size: 17px;
+        color:red;
+        padding-left:60px;
+        padding-bottom: 10px;
+        font-weight:bolder;
+    }
+    
+    .fido{
+        font-size:15px;
+        color:orange;
+        word-spacing: 0.1em;
+        padding-left: 20px;
+        font-weight: bolder;
+    }
+    
+    .far{
+        color:green;
+        font-size:13px ;
+        padding-left: 11px;
+        font-weight: bolder;
+    }
+    
+    
+    .bar{
+        background: #222;
+        margin-left:0px;
+        margin-right:0px;
+        height:40px;
+        margin-top:15px;
+        width:461px;
+    }
+    
+    .img1{
+        background-color:transparent;
+    
+    }
+    
+    .img2{
+        padding-left:160px;
+        position: relative;
+        bottom: 40px;
+        background: transparent;
+        mix-blend-mode: multiply;
+        
+    }
+    .img3{
+        padding-left:330px;
+        position:relative;
+        bottom:165px;
+    }
+    
+    .img4{
+        position: relative;
+        bottom:135px;
+    }
+    
+    .img5{
+        position:relative;
+        padding-left: 280px;
+        bottom:225px
+    }
+    
+    .content{
+        font-size:6px;
+        position:relative;
+        bottom:230px;
+        padding-left:255px;
+    }
+    
+    .content span{
+        padding-left:30px;
+        position: relative;
+        top:10px;
+    }
+    
+    .content p{
+        padding-left:30px;
+        position: relative;
+        top:5px;
+    }
+
+
+
+
+    /*form*/
+.card-form{
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%);
+    border-radius: 10px;
+    padding: 35px;
+    padding-top: 180px;
+    width: 58%;
+    margin-left: 20%;
+    /*margin-bottom: 116px;*/
+    margin-top: -13%;
+  }
+  .card-input{
+    margin-bottom: 20px;
+  }
+  .card-input_label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #1a3b5d;
+    display: block;
+    user-select: none;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .card-input_input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ced6e0;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    padding: 5px 15px;
+    background: none;
+    color: #1a3b5d;
+    font-family: "source sans pro",sans-serif;
+  }
+  .card-form_row{
+    display: flex;
+    align-items: flex-start;
+  }
+  .card-form_col{
+    flex: auto;
+    margin-right: 35px;
+  }
+  .card-form_group{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .card-input_input.-select{
+    /*-webkit-appearance: none;*/
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA…YAg5hYKAIFYgHBo6w9RRgAFfy160QuV8NAAAAAElFTkSuQmCC);
+    background-size: 12px;
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+  }
+  .card-form_group .card-input_input{
+    flex: 1;
+    margin-right: 15px;
+  }
+  option{
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2rem;
+    padding: 0px 2px 1px;
+  }
+  .card-form_col.-cvv{
+    max-width: 150px;
+  }
+  .card-form_col:last-child{
+    margin-right: 0;
+  }
+  .card-form_button {
+    width: 100%;
+    height: 55px;
+    background: #2364d2;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Source Sans Pro", sans-serif;
+    box-shadow: 3px 10px 20px 0px rgb(35 100 210 / 30%);
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
