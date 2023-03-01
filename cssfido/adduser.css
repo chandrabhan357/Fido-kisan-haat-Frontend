@@ -1,4 +1,4 @@
-input[type="text"]::placeholder{
+/*input[type="text"]::placeholder{
 
   text-indent: 10px;
 }
@@ -223,6 +223,154 @@ input[type="number"]::placeholder{
   .navcontainer{
     width: 395px;
   }
+  */
+
+  .User_container{
+    width:700px;
+    height:120vh;
+    background-color: white;
+    margin-left: 20%;
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }
+   
+  .User_container input{
+    width:100%;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .User_container span{
+    position: relative;
+    top:10px;
+    left:10px;
+    font-size:17px;
+    font-weight: 700;
+  }
   
+  .input_Name{
+   margin-top: 20px;
+  }
+
+  .input_bdy{
+    width:40%;
+  }
+
+  .input_city{
+    width:40%;
+    position: relative;
+    left: 60%;
+    bottom:175px;
+  }
+
+  .country_name select{
+    width:40%;
+    
+  }
+
+  .country_name{
+    padding-top:10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .state_name select{
+    width:100%;
+  }
+
+  .state_name{
+    padding-left: 60%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom:45px;
+  }
   
+  .Block{
+    width:40%;
+    position: relative;
+    bottom: 100px;
+  }
+
+  .pin{
+    width:40%;
+    position:relative;
+    left:60%;
+    bottom: 170px;
+  }
+
+  .input_pan{
+    position: relative;
+    bottom: 145px;
+  }
+
+  .input_aadhar{
+    position: relative;
+    bottom: 225px;
+    left:60%;
+  }
+
+  .gender_box{
+    position: relative;
+    bottom: 250px;
+    padding-bottom: 0px;
+  }
+
+  .gender_option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .gender_option input{
+    width:auto;
+  }
+
+  .gender_male label{
+    position: relative;
+    bottom:13px;
+    
+  }
+
+  .gender_male{
+    position: relative;
+    right:100px;
+  }
+
+
+  .gender_female label{
+    position: relative;
+    bottom: 13px;
+    
+  }
+
+  .gender_female{
+    position: relative;
+    right:200px;
+  }
+
+  .gender_other{
+    position: relative;
+    right:300px;
+  }
+
+  .gender_other label{
+    position: relative;
+    bottom: 13px;
+  }
+
+  .form_button{
+    position: relative;
+    bottom: 250px;
+    left: 85%;
+  }
   
+  .form_button button{
+    background-color: rgb(5, 5, 134);
+    padding:10px 15px;
+    border-radius: 5px;
+    border-color: rgb(5, 5, 134);
+    color:white;
+    margin-bottom: 20px;
+  }
