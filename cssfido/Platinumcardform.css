@@ -412,3 +412,43 @@ span {
   outline: none;
   border-bottom: 2px solid #555;
 }*/
+@media  only screen and (max-width: 500px) {
+  .card ,.card-inner,main,.card-form{
+    width: 100%;
+    margin-left: 1px;
+  }
+  
+}
+
+@media  only screen and (max-width: 600px) {
+  .card ,.card-inner,main,.card-form{
+    width: 100%;
+    
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+   .card-inner ,main{
+    width: 100%;
+  }
+    .card-form_group .card-input_input{
+     overflow: visible;
+
+    }
+  
+ }
+ @media only screen and (min-width: 992px){
+  .card-inner,main{
+    width: 100%;
+    
+  }
+  .card-form_group .card-input_input{
+   overflow: visible;
+ }
+}
+@media screen and (max-width:400px){
+  .row,.row card no, .row card-holder,.row name,.row card-type{
+    padding: 0px;
+    margin-top: 0px;
+  }
+}
