@@ -29,6 +29,10 @@ input[type="number"]::placeholder{
 
 }
 
+input{
+  padding-left: 10px;
+}
+
 .Vendor_container{
     height: 156vh;
     display: flex;
@@ -275,7 +279,6 @@ input[type="number"]::placeholder{
          margin-left:-10px;
       }
 
-Ritesh CSE, [01-03-2023 11:52]
 .Vendor_container form{
         margin-left: -15px;
       }
