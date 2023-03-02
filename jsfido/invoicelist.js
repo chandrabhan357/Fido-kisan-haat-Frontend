@@ -134,5 +134,5 @@ invoice(invoicelists);
 //}
 function navigateProduct() {
     console.log("clicked");
-    window.location.href = "http://127.0.0.1:5500/ad/internProject2/internProject2/Invoice.html";
+    window.location.href = "http://localhost:5502/Invoice1.html";
   }

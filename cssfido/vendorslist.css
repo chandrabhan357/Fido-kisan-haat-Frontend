@@ -24,7 +24,7 @@ body {
 }
 .vendortable {
   display: grid;
-  grid-template-columns: .75fr 1fr 1fr 1fr 1fr  ;
+  grid-template-columns: 0.75fr 1fr 1fr 1fr 1fr;
   gap: 8px;
   list-style: none;
   font-weight: bold;
@@ -33,7 +33,7 @@ body {
   color: #3a3331;
   place-items: center start;
   /* justify-content:space-between ; */
-   background-color: #eee; 
+  background-color: #eee;
 }
 .btnedit {
   /* padding: 15px 32px;*/
@@ -60,7 +60,6 @@ body {
     #ff512f 0%,
     #f09819 51%,
     #ff512f 100%
-
   );
   cursor: pointer;
   user-select: none;
@@ -75,7 +74,7 @@ body {
   /*background-color: #cebcbc;*/
   text-align: center;
   font-size: 20px;
- /* color: #5d476b;*/
+  /* color: #5d476b;*/
   background-color: #a89d9d;
 }
 .onclick {
@@ -92,7 +91,7 @@ body {
   display: flex;
   font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab",
     "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
-  font-size: .6em;
+  font-size: 0.6em;
   font-weight: 400;
   justify-content: center;
   line-height: 33.4929px;
@@ -141,7 +140,8 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-}*/
+}
+*/
 /*.btneditss {
   align-items: center;
   background-color:red;
@@ -168,42 +168,48 @@ body {
   touch-action: manipulation;
   white-space: nowrap;
 }*/
-.Addressrow{
-    padding-left: 30px;
+.Addressrow {
+  padding-left: 30px;
 }
-.btndel{
-    display: flex;
-    gap: 20px;
+.btndel {
+  display: flex;
+  gap: 20px;
 }
-.vendoremail{
-    text-align: left;
+.vendoremail {
+  text-align: left;
 }
-.email{
-    font-size: 15px;
-    font-weight: 200;
+.email {
+  font-size: 15px;
+  font-weight: 200;
 }
-.vendivlist{
-    color: #3e21bd; width: 1200px;
-   overflow-x: scroll;
+.vendivlist {
+  color: #3e21bd;
+  width: 1000px;
+  overflow-x: scroll;
 }
 
-
-@media screen and (max-width: 480px) {
-    /* body {
+@media screen and (max-width: 780px) {
+  /* body {
       background-color: lightgreen;
     } */
-
-    .vendor-list-container{
-        /* width: 1900px; */
-        background-color: #141c5c;
-        overflow-x: scroll;
-    }
-
-    .board {
-        /* min-width: 100vh; */
-        /* margin: 0 10px 0px 30px; */
-        overflow: auto; 
-        background: #5b3b3b;
-        border-radius: 8px;
-    }
+  .vendivlist {
+    color: #3e21bd;
+    /* width: 1000px; */
+    width: auto;
+    overflow-x: scroll;
   }
+
+  .vendor-list-container {
+    /* width: 1900px; */
+    /* background-color: #141c5c;
+    overflow-x: scroll; */
+  }
+
+  .board {
+    /* min-width: 100vh; */
+    /* margin: 0 10px 0px 30px; */
+    /* overflow: auto; */
+    background: #5b3b3b;
+    border-radius: 8px;
+  }
+}

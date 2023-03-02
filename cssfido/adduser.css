@@ -1,488 +1,458 @@
+input[type="text"]::placeholder {
+  text-indent: 10px;
+}
 
-  input[type="text"]::placeholder{
+input[type="tel"]::placeholder {
+  text-indent: 10px;
+}
+input[type="email"]::placeholder {
+  text-indent: 10px;
+}
 
-    text-indent: 10px;
-  }
-  
-  input[type="tel"]::placeholder{
-  
-    text-indent: 10px;
-  }
-  input[type="email"]::placeholder{
-  
-    text-indent: 10px;
-  }
-  
-  input[type="password"]::placeholder{
-  
-    text-indent: 10px;
-  }
-  
-  input[type="address"]::placeholder{
-  
-    text-indent: 10px;
-  }
-  
-  input[type="number"]::placeholder{
-  
-    text-indent: 10px;
-  }
+input[type="password"]::placeholder {
+  text-indent: 10px;
+}
 
-   
-  .User_container{
-    width:700px;
-    height:120vh;
-    background-color: white;
-    margin-left: 20%;
-    padding:20px;
-    font-size: smaller;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  }
-   
-  .User_container input{
-    width:100%;
-    height: 40px;
-    margin-bottom: 10px;
-    
-  }
+input[type="address"]::placeholder {
+  text-indent: 10px;
+}
 
-  input{
-    padding-left: 10px;
-  }
+input[type="number"]::placeholder {
+  text-indent: 10px;
+}
 
-  .User_container span{
+.User_container {
+  width: 700px;
+  /* height:120vh; 
+    */
+  height: 900px;
+  background-color: white;
+  margin-left: 20%;
+  padding: 20px;
+  font-size: smaller;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.User_container input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding-left: 10px;
+}
+
+.User_container span {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.input_Name {
+  margin-top: 20px;
+}
+
+.input_bdy {
+  width: 40%;
+}
+
+.input_city {
+  width: 40%;
+  position: relative;
+  left: 60%;
+  bottom: 165px;
+}
+
+.country_name select {
+  width: 40%;
+}
+
+.country_name {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.state_name select {
+  width: 100%;
+}
+
+.state_name {
+  padding-left: 60%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 42px;
+}
+
+.Block {
+  width: 40%;
+  position: relative;
+  bottom: 100px;
+}
+
+.pin {
+  width: 40%;
+  position: relative;
+  left: 60%;
+  bottom: 170px;
+}
+
+.input_pan {
+  position: relative;
+  bottom: 145px;
+}
+
+.input_aadhar {
+  position: relative;
+  bottom: 225px;
+  left: 60%;
+}
+
+.gender_box {
+  position: relative;
+  bottom: 250px;
+  padding-bottom: 0px;
+}
+
+.gender_option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.gender_option input {
+  width: auto;
+}
+
+.gender_male label {
+  position: relative;
+  bottom: 13px;
+}
+
+.gender_male {
+  position: relative;
+  right: 100px;
+}
+
+.gender_female label {
+  position: relative;
+  bottom: 13px;
+}
+
+.gender_female {
+  position: relative;
+  right: 200px;
+}
+
+.gender_other {
+  position: relative;
+  right: 300px;
+}
+
+.gender_other label {
+  position: relative;
+  bottom: 13px;
+}
+
+.form_button {
+  position: relative;
+  bottom: 250px;
+  left: 85%;
+}
+
+.form_button button {
+  background-color: rgb(5, 5, 134);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-color: rgb(5, 5, 134);
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  .User_container {
+    width: 100%;
     position: relative;
-    top:10px;
-    left:10px;
-    font-size:17px;
-    font-weight: 700;
-  }
-  
-  .input_Name{
-   margin-top: 20px;
+    right: 60px;
+    height: 150vh;
   }
 
-  .input_bdy{
-    width:40%;
-  }
-
-  .input_city{
-    width:40%;
+  .input_aadhar {
     position: relative;
-    left: 60%;
-    bottom:165px;
+    bottom: 150px;
+    left: 0px;
   }
 
-  .country_name select{
-    width:40%;
-    
-  }
-
-  .country_name{
-    padding-top:10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .state_name select{
-    width:100%;
-  }
-
-  .state_name{
-    padding-left: 60%;
-    display: flex;
-    flex-direction: column;
+  .gender_box {
     position: relative;
-    bottom:42px;
-  }
-  
-  .Block{
-    width:40%;
-    position: relative;
-    bottom: 100px;
+    left: 0px;
+    bottom: 160px;
   }
 
-  .pin{
-    width:40%;
-    position:relative;
-    left:60%;
-    bottom: 170px;
-  }
-
-  .input_pan{
-    position: relative;
-    bottom: 145px;
-  }
-
-  .input_aadhar{
-    position: relative;
-    bottom: 225px;
-    left:60%;
-  }
-
-  .gender_box{
-    position: relative;
-    bottom: 250px;
-    padding-bottom: 0px;
-  }
-
-  .gender_option{
+  .gender_option {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 
-  .gender_option input{
-    width:auto;
+  .gender_option input {
+    width: auto;
   }
 
-  .gender_male label{
-    position: relative;
-    bottom:13px;
-    
-  }
-
-  .gender_male{
-    position: relative;
-    right:100px;
-  }
-
-
-  .gender_female label{
-    position: relative;
-    bottom: 13px;
-    
-  }
-
-  .gender_female{
-    position: relative;
-    right:200px;
-  }
-
-  .gender_other{
-    position: relative;
-    right:300px;
-  }
-
-  .gender_other label{
+  .gender_male label {
     position: relative;
     bottom: 13px;
   }
 
-  .form_button{
+  .gender_male {
     position: relative;
-    bottom: 250px;
-    left: 85%;
-  }
-  
-  .form_button button{
-    background-color: rgb(5, 5, 134);
-    padding:10px 15px;
-    border-radius: 5px;
-    border-color: rgb(5, 5, 134);
-    color:white;
-    margin-bottom: 20px;
+    right: 10px;
   }
 
-
-  @media only screen and (max-width:400px){
-    .User_container{
-      width:100%;
-      position: relative; 
-      right:60px;
-      height: 150vh;
-    }
-
-    .input_aadhar{
-      position: relative;
-      bottom:150px;
-      left:0px;
-    }
-
-    .gender_box{
-      position: relative;
-      left:0px;
-      bottom:160px;
-    }
-
-    .gender_option{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-    }
-    
-  .gender_option input{
-    width:auto;
-  }
-
-  .gender_male label{
-    position: relative;
-    bottom:13px;
-    
-  }
-
-  .gender_male{
-    position: relative;
-    right:10px;
-  }
-
-
-  .gender_female label{
-    position: relative;
-    bottom: 13px;
-    
-  }
-
-  .gender_female{
-    position: relative;
-    right:20px;
-  }
-
-  .gender_other{
-    position: relative;
-    right:30px;
-  }
-
-  .gender_other label{
+  .gender_female label {
     position: relative;
     bottom: 13px;
   }
 
-    .form_button{
-      position: relative;
-      bottom:150px;
-      left:190px;
-    }
-
-    .input_city{
-      margin-top: 10px;
-    }
-
-    .state_name{
-      margin-top: 3px;
-    }
+  .gender_female {
+    position: relative;
+    right: 20px;
   }
 
-  @media only screen and (max-width:280px){
-    .User_container{
-      width:100%;
-      margin-left:60px;
-      height:160vh;
-    }
-
-    .form_button{
-      margin-left:-90px;
-      position: relative;
-      bottom: 170px;
-    }
-
-    .input_city{
-      margin-top: 10px;
-    }
-
-    .state_name{
-      margin-top: 3px;
-    }
-
-    
-    .gender_option{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      padding-left: 10px;
-    }
-    
-    .gender_option input{
-     width:auto;
-     
-    }
-
-    .gender_male label{
+  .gender_other {
     position: relative;
-    bottom:40px;
-    left:15px;
-    
-    }
+    right: 30px;
+  }
 
-    .gender_male{
+  .gender_other label {
     position: relative;
-    right:10px;
-    }
+    bottom: 13px;
+  }
 
+  .form_button {
+    position: relative;
+    bottom: 150px;
+    left: 190px;
+  }
 
-    .gender_female label{
+  .input_city {
+    margin-top: 10px;
+  }
+
+  .state_name {
+    margin-top: 3px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .User_container {
+    width: 100%;
+    margin-left: 60px;
+    height: 160vh;
+  }
+
+  .form_button {
+    margin-left: -90px;
+    position: relative;
+    bottom: 170px;
+  }
+
+  .input_city {
+    margin-top: 10px;
+  }
+
+  .state_name {
+    margin-top: 3px;
+  }
+
+  .gender_option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10px;
+  }
+
+  .gender_option input {
+    width: auto;
+  }
+
+  .gender_male label {
     position: relative;
     bottom: 40px;
-    left:15px;
-    }
+    left: 15px;
+  }
 
-    .gender_female{
+  .gender_male {
     position: relative;
-    left:0px;
-    }
+    right: 10px;
+  }
 
-    .gender_other{
-    position: relative;
-    left:10px;
-    }
-
-    .gender_other label{
+  .gender_female label {
     position: relative;
     bottom: 40px;
-    left:15px;
-    }
-
+    left: 15px;
   }
 
-  @media only screen and (min-width:401px) and (max-width:500px){
-    .User_container{
-      width: 100%;
-      position: relative;
-      right:70px;
-      height:130vh;
-    }
-
-    .input_city{
-      margin-top: 10px;
-    }
-
-    .state_name{
-      margin-top: 3px;
-    }
-
-    .gender_box{
-      margin-top: 100px;
-    }
-
-    .gender_option{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      padding-left: 10px;
-      
-    }
-    
-    .gender_option input{
-     width:auto;
-     
-    }
-
-    .gender_male label{
+  .gender_female {
     position: relative;
-    bottom:15px;
-    left:px;
-    
-    }
+    left: 0px;
+  }
 
-    .gender_male{
+  .gender_other {
     position: relative;
-    left:-30px;
-    }
+    left: 10px;
+  }
 
+  .gender_other label {
+    position: relative;
+    bottom: 40px;
+    left: 15px;
+  }
+}
 
-    .gender_female label{
+@media only screen and (min-width: 401px) and (max-width: 500px) {
+  .User_container {
+    width: 100%;
+    position: relative;
+    right: 70px;
+    height: 130vh;
+  }
+
+  .input_city {
+    margin-top: 10px;
+  }
+
+  .state_name {
+    margin-top: 3px;
+  }
+
+  .gender_box {
+    margin-top: 100px;
+  }
+
+  .gender_option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10px;
+  }
+
+  .gender_option input {
+    width: auto;
+  }
+
+  .gender_male label {
     position: relative;
     bottom: 15px;
-    left:0px;
-    }
+    left: px;
+  }
 
-    .gender_female{
+  .gender_male {
     position: relative;
-    left:-50px;
-    }
+    left: -30px;
+  }
 
-    .gender_other{
-    position: relative;
-    left:-70px;
-    }
-
-    .gender_other label{
+  .gender_female label {
     position: relative;
     bottom: 15px;
-    left:0px;
-    }
-
-    .input_aadhar{
-      position: relative;
-      bottom:150px;
-      left:0px;
-    }
-
-    .form_button{
-      position: relative;
-      left: 230px;
-    }
-    
+    left: 0px;
   }
 
-  @media only screen and (max-width:750px) and (min-width:501px) {
-    .User_container{
-       width:100%;
-       height:130vh;
-       position: relative;
-       right:95px;
-    }
-
-    .input_city{
-      margin-top: 10px;
-    }
-    
-    .state_name{
-      margin-top:3px;
-    }
-
-    
-    .gender_option{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-    }
-    
-  .gender_option input{
-    width:auto;
-  }
-
-  .gender_male label{
+  .gender_female {
     position: relative;
-    bottom:13px;
-    
+    left: -50px;
   }
 
-  .gender_male{
+  .gender_other {
     position: relative;
-    right:50px;
+    left: -70px;
   }
 
+  .gender_other label {
+    position: relative;
+    bottom: 15px;
+    left: 0px;
+  }
 
-  .gender_female label{
+  .input_aadhar {
+    position: relative;
+    bottom: 150px;
+    left: 0px;
+  }
+
+  .form_button {
+    position: relative;
+    left: 230px;
+  }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 501px) {
+  .User_container {
+    width: 100%;
+    height: 130vh;
+    position: relative;
+    right: 95px;
+  }
+
+  .input_city {
+    margin-top: 10px;
+  }
+
+  .state_name {
+    margin-top: 3px;
+  }
+
+  .gender_option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .gender_option input {
+    width: auto;
+  }
+
+  .gender_male label {
     position: relative;
     bottom: 13px;
-    
   }
 
-  .gender_female{
+  .gender_male {
     position: relative;
-    right:100px;
+    right: 50px;
   }
 
-  .gender_other{
+  .gender_female label {
     position: relative;
-    right:150px;
+    bottom: 13px;
   }
 
-  .gender_other label{
+  .gender_female {
+    position: relative;
+    right: 100px;
+  }
+
+  .gender_other {
+    position: relative;
+    right: 150px;
+  }
+
+  .gender_other label {
     position: relative;
     bottom: 13px;
   }
 }
 
-@media only screen and (max-width:1050px) and (min-width:751px) {
-  .User_container{
-    width:100%;
+@media only screen and (max-width: 1050px) and (min-width: 751px) {
+  .User_container {
+    width: 100%;
     position: relative;
-    right:140px;
-    height:150vh;
+    right: 140px;
+    height: 150vh;
   }
-  
 }

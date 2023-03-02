@@ -1,7 +1,7 @@
 let subMenu = document.getElementById("subMenu");
     let btnProfile = document.getElementById("profile-btn");
 
-    btnProfile.addEventListener('mouseover',
+    btnProfile.addEventListener('click',
     
     function toggleMenu() {
       console.log("working")
