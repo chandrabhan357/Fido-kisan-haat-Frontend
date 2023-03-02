@@ -29,15 +29,19 @@ input[type="number"]::placeholder{
 
 }
 
+input{
+  padding-left: 10px;
+}
+
 .Vendor_container{
-    height: 160vh;
+    height: 156vh;
     display: flex;
+    width:700px;
     padding: 10px;
-    max-width: 700px;
-    width: 100%;
     background-color:#fff;
-    position: relative;
-    left:15%;
+    position: absolute;
+    margin-left:12%;
+    display: center;
     top:0px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
@@ -52,87 +56,98 @@ input[type="number"]::placeholder{
     
     
   }
-  
+
+  .Vendor_container label{
+    font-size: small;
+  }
+
   
   .input_name{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
+    display: flex;
+    flex-direction: column;
+      
+   
     padding-top: 20px;
-    margin-left: 80px;
+    
   }
   
   .input_code{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+   
   }
   
   .input_phone{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+   
   }
   
   .input_alt_phone{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+   
   }
   
   .input_email{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
   }
   
   .input_password{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
   }
 
   .input_add{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+ 
   }
   
   .input_pan{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+   
   }
   
   .input_aadhar{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
+    display: flex;
+    flex-direction: column;
     position: relative;
-    left:302px;
+    left:360px;
     bottom:83px;
     margin-left: 80px;
   }
   
   .input_doc{
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
+    display: flex;
+    flex-direction: column;
     position: relative;
     bottom: 100px;
-    margin-left: 80px;
+    
   }
   
   .Vendor_container .form{
     position: relative;
     top:50px;
     
-    right:80px;
     padding-left: 30px;
-    padding-right: 50px;
+    padding-right: 30px;
     
   }
   
-  .Vendor_container input{
-    width:620px;
-  }
+  
   
   input{
     height:40px;
@@ -140,8 +155,8 @@ input[type="number"]::placeholder{
   
   .form_button{
     position: relative;
-    bottom: 120px;
-    left:620px;
+    bottom: 135px;
+    left:535px;
   }
   
   .form_button button{
@@ -158,7 +173,7 @@ input[type="number"]::placeholder{
   }
   
   .fewcontain, .fewcontain2{
-    margin-left: 80px;
+    
     display: flex;
     
     
@@ -168,9 +183,21 @@ input[type="number"]::placeholder{
     margin-top: 30px;
   }
 
-  .input_state, .pin{
-    padding-left: 200px;
+  .input_state{
+    padding-left: 320px;
+    display: flex;
+    flex-direction: column;
   }
+
+  .input_country{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pin{
+    padding-left: 195px;
+  }
+
 
   .fewcontain{
     margin-top: 26px;
@@ -179,3 +206,245 @@ input[type="number"]::placeholder{
   .fewcontain2{
     margin-top: 30px;
   }
+
+  
+    
+
+  
+ 
+
+
+
+  @media only screen and (max-width:400px) and (min-width:300px){
+      .Vendor_container{
+        
+       position: relative;
+       left:-60px;
+      
+       width: 100%; 
+       height: 185vh; 
+        
+      }
+      .Vendor_container input{
+        width:230px;
+      }      
+
+      .input_state{
+        position:relative;
+        right:550px;
+        top:70px;
+      }
+      .input_country select{
+        width:230px;
+      }
+
+      .input_city{
+        margin-top: 60px;
+      }
+
+      .pin{
+        position: relative;
+        top:140px;
+        right:527px;
+      }
+      .input_pan {
+        margin-top:100px;
+      }
+      .input_aadhar{
+         position: relative;
+         top:-10px;
+         left:-10.5%;
+         margin-right:100px;
+         
+      }
+      .input_doc{
+        position:relative;
+        top:-20px;
+      }
+
+      .form_button{
+        position: relative;
+        top:-30px;
+        left:-0px;
+      }
+    }
+
+   
+    @media only screen and (max-width:280px){
+      .Vendor_container input{
+        width:230px;
+        
+      }
+      .Vendor_container span{
+         margin-left:-10px;
+      }
+
+.Vendor_container form{
+        margin-left: -15px;
+      }
+      
+      .Vendor_container{
+        margin-left:-30px;
+        width:100%;
+        height:180vh;
+        margin-top:100px;
+      }
+      .fewcontain2 input{
+        width:230px;
+      }
+      .pin input{
+        width:230px;
+      }
+      .input_state select{
+        width:230px;
+      }
+      .input_country select{
+        width:230px;
+      }
+      .input_state{
+        position:relative;
+        right:550px;
+        top:60px;
+      }
+      .input_city{
+        position: relative;
+        top:40px;
+      }
+      .pin{
+        position:relative;
+        right:527px;
+        top:120px;
+      }
+      .input_pan{
+        margin-top: 140px;
+      }
+      .input_aadhar{
+        position:relative;
+        left:-80px;
+        top:-20px;
+        
+      }
+      .input_doc{
+        margin-top: 80px;
+      }
+      .form_button{
+        position:relative;
+        left:0px;
+        top:-90px;
+        
+      }
+    }
+
+
+    @media only screen and (max-width:500px)and (min-width:401px){
+      .Vendor_container{
+        width:100%;
+        margin-top: 100px;
+        margin-left: -30px;
+        height: 140vh;
+      }
+
+      .Vendor_container input{
+        width:330px;
+      }
+      .form input{
+        padding-top: 10px;
+      }
+      .input_country select{
+         width:330px;
+      }
+      .input_state{
+        position:relative;
+        right:650px;
+        top:70px;
+      }
+      .input_state select{
+        width:330px;
+     }
+      .input_city{
+         margin-top: 60px;
+      }
+      .pin{
+        position:relative;
+        right:627px;
+        top:150px;
+      }
+      .input_pan{
+        margin-top: 120px;
+      }
+      .input_aadhar{
+        position:relative;
+        left:-80px;
+        top:0px;
+      }
+      .input_doc{
+        margin-top:120px;
+      }
+      .form_button{
+        position:relative;
+        left:0px;
+        top:-90px;
+      }
+    }
+
+
+    @media only screen and (max-width:750px) and (min-width:501px){
+      .Vendor_container{
+        width:100%;
+        margin-top: 100px;
+        margin-left: -30px;
+        height:135vh ;
+      }
+      .Vendor_container input{
+        width:450px;
+      }
+
+      .input_state{
+        margin-left: -175px;
+      }
+
+      .fewcontain2 input{
+        width:150px;
+      }
+      .pin{
+        position: relative;
+        right:150px;
+      }
+
+      .input_aadhar{
+        position: relative;
+        left:190px;
+      }
+
+      .form button{
+        position: relative;
+        right:27%;
+      }
+    }
+
+    @media only screen and (max-width:900px) and (min-width:750px){
+      .Vendor_container{
+        margin-left:-30px;
+        margin-top:20px;
+        height:100vh;
+        width:100%;
+      }
+      .Vendor_container input{
+        width:100%;
+      }
+      .input_state{
+        margin-left:60px;
+      }
+      .input_aadhar{
+        margin-left:140px;
+      }
+    }
+
+
+    @media only screen and (max-width:1200px) and (min-width:901px){
+      .Vendor_container{
+        
+        height: 100%;
+        margin-left:-20px;
+      }
+    }
