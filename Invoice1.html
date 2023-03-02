@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,
+				initial-scale=1.0" />
+  <title>Invoice</title>
+  <link rel="stylesheet" href="./cssfido/style.css" />
+  <link rel="stylesheet" href="./cssfido/responsive.css" />
+  <link rel="stylesheet" href="./cssfido/userprofile.css" />
+  <link rel="stylesheet" href="./cssfido/invoice.css">
+</head>
+
+<body>
+  <!-- for header part -->
+  <header>
+    <div class="logosec">
+      <div class="logo">
+        <img src="./img/logo.png" class="logoicon" id="logicon" alt="nav img" />
+      </div>
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+        class="icn menuicn" id="menuicn" alt="menu-icon" />
+    </div>
+
+    <div class="searchbar">
+      <input type="text" placeholder="Search" />
+      <div class="searchbtn">
+        <img src="./img/search-icon-png-2.png" class="icn srchicn" alt="search-icon" />
+      </div>
+    </div>
+
+    <div class="message">
+      <div class="circle"></div>
+      <img src="./img/8.png" class="icn" alt="" />
+      <div class="dp">
+        <img src="./img/profile-removebg-preview.png" class="dpicn" id="profile-btn" alt="dp" />
+        <!--Profile -->
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="./img/profile-removebg-preview.png" />
+              <h3>Name</h3>
+            </div>
+            <hr />
+
+            <a href="profile.html" class="sub-menu-link">
+              <img src="./img/profileicon.jpg" />
+              <p>PROFILE</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="sub-menu-link">
+              <img src="./img/logouticon.jpg" />
+              <p>LOGOUT</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <div class="navcontainer">
+      <nav class="nav">
+        <div class="nav-upper-options">
+          <div class="nav-option option1">
+            <a class="deco" href="allcard.html"><img src="./img/dashboard-layout.png" class="nav-img" alt="dashboard" />
+              <h3 style="color: #fff">Dashboard</h3>
+            </a>
+          </div>
+
+          <div class="option2 nav-option">
+            <a class="deco" href="allcard.html"><img src="./img/bank-card-back-side.png" class="nav-img" alt="card" />
+              <h4>Card Dashboard</h4>
+            </a>
+          </div>
+
+          <div class="nav-option option3">
+            <a class="deco" href=""><img src="./img/franchise.png" class="nav-img" alt="vendor" />
+              <h4>Vendor/Franchise</h4>
+            </a>
+          </div>
+
+          <div class="nav-option option4">
+            <a class="deco" href="adduser.html"><img
+                src="./img/external-add-user-social-media-ui-tanah-basah-basic-outline-tanah-basah.png" class="nav-img"
+                alt="user" />
+              <h4>Add Customer</h4>
+            </a>
+          </div>
+
+          <div class="nav-option option5">
+            <a class="deco" href="addvendor.html"><img src="./img/addvendor.png" class="nav-img" alt="franchise" />
+              <h4>Add Vendor</h4>
+            </a>
+          </div>
+
+          <div class="nav-option option6">
+            <img src="./img/external-invoices-ecommerce-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" class="nav-img"
+              alt="invoice" />
+            <h4>Invoice</h4>
+          </div>
+
+          <div class="nav-option logout">
+            <img src="./img/icons8-logout-rounded-30.png" class="nav-img" alt="logout" />
+            <h4>Logout</h4>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="searchbar2">
+        <input type="text" name="" id="" placeholder="Search" />
+        <div class="searchbtn">
+          <img src="./img/search-icon-png-2.png" class="icn srchicn" alt="search-button" />
+        </div>
+      </div>
+      <!-- <div class="invoice-button"> -->
+        <button onclick="generatePDF()">Download</button>
+      <!-- </div> -->
+      <div class="main-invoice">
+        <div class="invoice_container">
+          <!-- <div class="background_image">
+            <img width="50%" src="img/logo.jpeg" alt="" srcset="" />
+          </div> -->
+          <!-- <div class="title"> -->
+          <div class="invoice_header">
+            <div class="logo_container">
+              <img src="img/logo.png" />
+            </div>
+            <div class="subheader">
+              <p>
+                Tax Invoice/Bill of Supply <br />
+                (Original For Recipient)
+              </p>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="sold">
+            <div class="Sold_container">
+              <p>
+              <h3>Sold By:</h3>
+              <h4>Fido India Retail Ltd.</h4>
+              Head Office: House No.N-701,<br />
+              Ground Floor, Chitragupt Nagar,<br />
+              Kankarbagh , Patna -20, Bihar
+              </p>
+              </p>
+            </div>
+            <div class="Billing_container">
+              <p>
+              <h3>Billing Address:</h3>
+              Head Office: House No.N-701,<br />
+              Ground Floor, Chitragupt Nagar,<br>
+              Kankarbagh , Patna -20, Bihar</p>
+            </div>
+          </div>
+          <div class="details_about">
+            <div class="details">
+              <p>
+                <strong>Pan No:</strong> 14515478<br />
+                <strong>GST Number:</strong> 25151541514515 <br>
+                <strong>E-mail:</strong> abc@gmail.com
+              </p>
+            </div>
+            <div class="shipping_address">
+              <p>
+              <h2>Shipping Adress:</h2>
+              Head Office: House No.N-701,<br />
+              Ground Floor, Chitragupt Nagar,<br />
+              Kankarbagh , Patna -20, Bihar
+              </p>
+              <p>
+                <strong>State/Ut Code:</strong> 36<br />
+                <strong>Place of Suply:</strong> Patna<br />
+                <strong>Place of Delivery:</strong> Patna<br />
+              </p>
+            </div>
+          </div>
+          <div class="Number">
+            <div class="order">
+              <p>
+                <strong>Order Number:</strong> 171-555-888<br />
+                <strong>Order Date:</strong> 16.02.2023
+              </p>
+            </div>
+            <div class="order_right">
+              <p>
+                <strong>Invoice Number:</strong>1712512<br />
+                <strong>Invoice Date:</strong>16.02.2023 <br>
+                <strong>E-mail:</strong>abc@123.gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div class="allproduct">
+            <ul class='allproduct-head'>
+              <li>Si No.</li>
+              <li>Description</li>
+              <li>Unit Price</li>
+              <li>Discount</li>
+              <li>Qty</li>
+              <li>Tax Rate</li>
+              <li>Tax Amount</li>
+              <li>Total Amount</li>
+            </ul>
+            <div id="invoice1"></div>
+          </div>
+          <div class="footer">
+            <div class="total-container">
+              <h2>Total:</h2>
+              <diV class="Total" id="Totalamount"></diV>
+            </div>
+            <div class="amount">
+              <h3>Amount In words:</h3>
+              <div id="words">One thousand two hundred one</div>
+            </div>
+            <div class="signature">
+              Authorised signature
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./jsfido/index.js"></script>
+  <script src="./jsfido/userprofile.js"></script>
+  <script src="./jsfido/invoice.js"></script>
+  <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</body>
+
+</html>
